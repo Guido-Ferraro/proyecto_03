@@ -1,10 +1,9 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Head from 'next/head'
-import react, { ReactChild, ReactNode } from "react";
-import { NextComponentType, NextPageContext } from "next";
+import { PropsWithChildren, ReactNode } from "react";
 
-const Layout = ({children}) => {
+const Layout = ({children}: PropsWithChildren<{}>): JSX.Element => {
 	
 	return (
 		<>
