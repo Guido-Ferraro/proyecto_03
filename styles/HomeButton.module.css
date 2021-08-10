@@ -1,0 +1,45 @@
+.logoContainer {
+  -webkit-text-size-adjust: 100%;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  display: block;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  position: relative;
+  float: left;
+  text-decoration: none;
+  color: #333333;
+  z-index: 1;
+  width: 150px;
+  outline: 5px solid #333333;
+  outline-offset: -9px;
+}
+
+.logoContainer:hover, .logoContainer:active {
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.logoImage {
+  -webkit-text-size-adjust: 100%;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #333333;
+  width: 108px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: block;
+}
+/*# sourceMappingURL=HomeButton.module.css.map */
