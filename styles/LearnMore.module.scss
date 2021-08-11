@@ -16,6 +16,9 @@
   line-height: 26px;
   background-color: #fff;
   color: #000;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .learnMoreDiv {
   -webkit-text-size-adjust: 100%;

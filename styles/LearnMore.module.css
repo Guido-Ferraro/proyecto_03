@@ -20,6 +20,10 @@
   color: #000;
 }
 
+.learnMoreWrapper:hover {
+  cursor: pointer;
+}
+
 .learnMoreDiv {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
