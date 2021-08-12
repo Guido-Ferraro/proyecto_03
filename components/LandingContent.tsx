@@ -3,6 +3,7 @@ import HomeGridElement from "./HomeGridElement";
 import styles from "../styles/LandingContent.module.css";
 import home_about from "../public/home_about.svg";
 import home_team from "../public/home_team.svg";
+
 const LandingContent = (): JSX.Element => {
   return (
     <section className={styles.landingContentContainer}>
@@ -14,7 +15,9 @@ const LandingContent = (): JSX.Element => {
           paragraph={`Nulla vel sodales tellus, quis condimentum enim. Nunc porttitor venenatis feugiat. Etiam quis faucibus erat, non accumsan leo. Aliquam erat volutpat. Vestibulum ac faucibus eros. Cras ullamcorper gravida tellus ut consequat.
 
 					`}
+          link="empresa"
           src={home_about}
+          orientation={styles.containerRight}
           alt={`Who we are`}
         />
         <HomeGridElement
@@ -24,6 +27,10 @@ const LandingContent = (): JSX.Element => {
 
 					`}
           src={home_team}
+          link="experiencia"
+          orientation={styles.containerLeft}
+          text={styles.textRight}
+          image={styles.imageLeft}
           alt={`What we do`}
         />
       </div>

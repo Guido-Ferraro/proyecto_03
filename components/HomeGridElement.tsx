@@ -7,26 +7,31 @@ interface HomeGridElementType {
   title: string | undefined;
   paragraph: string | undefined;
   src: any;
+  orientation: string | undefined;
+  link: string;
+  text?: string | undefined;
+  image?: string | undefined;
   alt?: string | undefined;
 }
 
 const HomeGridElement = (props: HomeGridElementType): JSX.Element => {
-  const { label, title, paragraph, src, alt } = props;
+  const { label, title, paragraph, src, orientation, text, image, alt, link } =
+    props;
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
+    <div className={orientation}>
+      <div className={text}>
         <div className={styles.textWrapper}>
           <div className={styles.label}>{label}</div>
           <h2 className={styles.title}>{title}</h2>
           <p className={styles.paragraph}>{paragraph}</p>
         </div>
-        <Link href={`/empresa`} passHref>
+        <Link href={`/${link}`} passHref>
           <span className={styles.Link}>
             <div className={styles.LinkDiv}>Más</div>
           </span>
         </Link>
       </div>
-      <Image src={src} alt={alt} className={styles.image} />
+      <Image src={src} alt={alt} className={image} />
     </div>
   );
 };
