@@ -4,12 +4,11 @@
   font-weight: 400;
   text-align: center;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 100%;
   display: inline-block;
   border-radius: 0px;
-  -webkit-transition: background-color 400ms ease, opacity 400ms ease,
-    color 400ms ease;
+  -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   letter-spacing: 2px;
   text-decoration: none;
@@ -23,7 +22,6 @@
 
 .learnMoreWrapper:hover {
   cursor: pointer;
-  background-color: #f1f1f1;
 }
 
 .learnMoreDiv {
@@ -37,6 +35,6 @@
   line-height: 26px;
   color: #000;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=LearnMore.module.css.map */
