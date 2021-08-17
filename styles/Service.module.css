@@ -16,11 +16,11 @@
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
-  width: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 0;
   max-width: 100%;
+  width: 50px;
   vertical-align: middle;
   display: block;
   margin-bottom: 30px;
