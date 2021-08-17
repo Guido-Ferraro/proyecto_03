@@ -9,6 +9,7 @@
           box-sizing: border-box;
   margin-right: 30px;
   margin-left: 30px;
+  padding-bottom: 120px;
 }
 
 .container {
@@ -84,7 +85,7 @@
   opacity: 0.8;
 }
 
-.logo:hover {
+.logo:hover, .logo:active {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
   opacity: 1;

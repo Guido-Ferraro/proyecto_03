@@ -1,6 +1,8 @@
+import NavSectionIntro from "../components/NavSectionIntro";
 const Servicios = (): JSX.Element => {
   return (
     <div>
+      <NavSectionIntro title={"Servicios"} />
       Nuestros Servicios
       <br />
       Nuestra empresa se dedica al desarrollo de modelos matemáticos de

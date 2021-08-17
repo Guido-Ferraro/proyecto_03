@@ -1,6 +1,9 @@
+import NavSectionIntro from "../components/NavSectionIntro";
+
 const Experiencia = (): JSX.Element => {
   return (
     <div>
+      <NavSectionIntro title={"Experiencia"} />
       Nuestra Experiencia
       <br />
       Nuestras fortalezas se basan en la experiencia en la industria

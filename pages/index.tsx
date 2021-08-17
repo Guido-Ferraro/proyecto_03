@@ -1,6 +1,5 @@
 import Splash from "../components/Splash";
 import LandingContent from "../components/LandingContent";
-import CallToAction from "../components/CallToAction";
 import styles from "../styles/Home.module.css";
 import Companies from "../components/Companies";
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
         <LandingContent />
       </div>
       <Companies />
-      <CallToAction />
     </div>
   );
 }

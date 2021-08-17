@@ -1,6 +1,9 @@
+import NavSectionIntro from "../components/NavSectionIntro";
+
 const Empresa = (): JSX.Element => {
   return (
     <div>
+      <NavSectionIntro title={`Nosotros`} />
       La Empresa
       <br />
       Somos una empresa que brinda soluciones avanzadas en simulación,
