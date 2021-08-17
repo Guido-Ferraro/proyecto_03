@@ -6,16 +6,14 @@ interface NavSectionIntroProps {
 
 const NavSectionIntro = (props: NavSectionIntroProps): JSX.Element => {
   return (
-    <section className={styles.section}>
-      <div className={styles.wrapper}>
-        <div className={styles.content}>
-          <div className={styles.heading}>
-            {props.title}
-            <br />
-          </div>
+    <div className={styles.wrapper}>
+      <div className={styles.content}>
+        <div className={styles.heading}>
+          {props.title}
+          <br />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

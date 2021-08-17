@@ -2,7 +2,7 @@ import NavSectionIntro from "../components/NavSectionIntro";
 
 const Experiencia = (): JSX.Element => {
   return (
-    <div>
+    <div className="container">
       <NavSectionIntro title={"Experiencia"} />
       Nuestra Experiencia
       <br />
