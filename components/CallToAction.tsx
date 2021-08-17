@@ -17,7 +17,7 @@ const CallToAction = (): JSX.Element => {
               <br />
             </div>
           </div>
-          <Link href={`/contacto`} passHref>
+          <Link href={`/información`} passHref>
             <span className={styles.Link}>
               <div className={styles.LinkContent}>Start Now</div>
             </span>

@@ -3,7 +3,7 @@ import styles from "../styles/Empresa.module.css";
 
 const Empresa = (): JSX.Element => {
   return (
-    <section className={styles.section}>
+    <>
       <NavSectionIntro title={"Nosotros"} />
       <div className={styles.contentContainer}>
         <div className={styles.mottoWrap}>
@@ -37,7 +37,7 @@ const Empresa = (): JSX.Element => {
         </p>
       </div>
       <div className="divider"></div>
-    </section>
+    </>
   );
 };
 

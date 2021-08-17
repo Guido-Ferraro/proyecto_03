@@ -7,10 +7,8 @@
   font-weight: 400;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
-  max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .contentContainer {
@@ -99,5 +97,20 @@
   margin-top: 0;
   margin-bottom: 10px;
   opacity: 0.6;
+}
+
+.gridContainer {
+  -webkit-text-size-adjust: 100%;
+  font-family: Montserrat, sans-serif;
+  color: #1a1b1f;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /*# sourceMappingURL=Servicios.module.css.map */

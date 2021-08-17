@@ -3,7 +3,7 @@ import ServicesGrid from "../components/ServicesGrid";
 import styles from "../styles/Servicios.module.css";
 const Servicios = (): JSX.Element => {
   return (
-    <section className={styles.section}>
+    <>
       <NavSectionIntro title={"Servicios"} />
       <div className={styles.contentContainer}>
         <div className={styles.mottoWrap}>
@@ -31,9 +31,10 @@ const Servicios = (): JSX.Element => {
       </div>
       <div className="divider"></div>
       <div className={styles.divider}></div>
-
-      <ServicesGrid />
-    </section>
+      <div className={styles.gridContainer}>
+        <ServicesGrid />
+      </div>
+    </>
   );
 };
 
