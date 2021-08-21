@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/Companies.module.css";
 import FadeIn from "react-fade-in/lib/FadeIn";
+
 const Companies = (): JSX.Element => {
   function importAll(r: any) {
     return r.keys().map(r);

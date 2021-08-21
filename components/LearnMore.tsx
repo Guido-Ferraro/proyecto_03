@@ -5,7 +5,7 @@ const LearnMore = (): JSX.Element => {
   return (
     <Link href={`/empresa`} passHref>
       <div className={styles.learnMoreWrapper}>
-        <div className={styles.learnMoreDiv}>Learn More</div>
+        <div className={styles.learnMoreDiv}>Más</div>
       </div>
     </Link>
   );
