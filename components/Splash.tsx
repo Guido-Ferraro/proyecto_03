@@ -1,6 +1,6 @@
 import LearnMore from "./LearnMore";
 import styles from "../styles/Splash.module.css";
-import FadeIn from "react-fade-in/lib/FadeIn";
+import FadeIn from "./FadeIn";
 const Splash = (): JSX.Element => {
   const time: number = 1000;
   return (
