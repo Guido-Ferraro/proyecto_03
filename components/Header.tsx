@@ -10,10 +10,10 @@ const Header = (): JSX.Element => {
       <div className={styles.navWrapper}>
         <HomeButton />
         <Nav>
-          <NavButton content={`La Empresa`} id={`empresa`} />
-          <NavButton content={`Servicios`} id={`servicios`} />
-          <NavButton content={`Experiencia`} id={`experiencia`} />
-          <NavButton content={`Información`} id={`informacion`} />
+          <NavButton content={`La Empresa`} id={`empresa`} index={1} />
+          <NavButton content={`Servicios`} id={`servicios`} index={2} />
+          <NavButton content={`Experiencia`} id={`experiencia`} index={3} />
+          <NavButton content={`Información`} id={`informacion`} index={4} />
         </Nav>
         <ContactButton />
       </div>
