@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/HomeGridElement.module.css";
+import FadeIn from "./FadeIn";
 
 interface HomeGridElementType {
   label: string | undefined;
@@ -21,17 +22,23 @@ const HomeGridElement = (props: HomeGridElementType): JSX.Element => {
     <div className={orientation}>
       <div className={text}>
         <div className={styles.textWrapper}>
-          <div className={styles.label}>{label}</div>
-          <h2 className={styles.title}>{title}</h2>
-          <p className={styles.paragraph}>{paragraph}</p>
+          <FadeIn delay={250} transitionDuration={1000}>
+            <div className={styles.label}>{label}</div>
+            <h2 className={styles.title}>{title}</h2>
+            <p className={styles.paragraph}>{paragraph}</p>
+          </FadeIn>
         </div>
         <Link href={`/${link}`} passHref>
-          <span className={styles.Link}>
-            <div className={styles.LinkDiv}>Más</div>
-          </span>
+          <FadeIn delay={250} transitionDuration={1000}>
+            <span className={styles.Link}>
+              <div className={styles.LinkDiv}>Más</div>
+            </span>
+          </FadeIn>
         </Link>
       </div>
-      <Image src={src} alt={alt} className={image} />
+      <FadeIn delay={250} transitionDuration={1000}>
+        <Image src={src} alt={alt} className={image} />
+      </FadeIn>
     </div>
   );
 };

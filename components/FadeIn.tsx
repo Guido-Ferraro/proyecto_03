@@ -4,6 +4,9 @@ import React, {
   useEffect,
   useState,
 } from "react";
+const { v4: uuidv4 } = require("uuid");
+
+import { useRef } from "react";
 
 interface Props {
   delay?: number;
@@ -22,8 +25,10 @@ export default function FadeIn(props: PropsWithChildren<Props>) {
   const delay = props.delay || 50;
   const WrapperTag = props.wrapperTag || "div";
   const ChildTag = props.childTag || "div";
-  const visible = typeof props.visible === "undefined" ? true : props.visible;
-
+  const [visibility, setVisibility] = useState(false);
+  let visible =
+    typeof props.visible === "undefined" ? visibility : props.visible;
+  const visibilize = setVisibility;
   useEffect(() => {
     let count = React.Children.count(props.children);
     if (!visible) {
@@ -47,8 +52,26 @@ export default function FadeIn(props: PropsWithChildren<Props>) {
     return () => clearTimeout(timeout);
   }, [delay, maxIsVisible, visible, transitionDuration, props]);
 
+  const refId = useRef(uuidv4());
+
+  useEffect(() => {
+    const faders = document.getElementsByClassName(props.className as string);
+    if (faders) {
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+          visibilize(true);
+          observer.unobserve(entry.target);
+        });
+      }, {});
+      observer.observe(refId.current);
+    }
+  }, [props.className, visibilize]);
+
   return (
-    <WrapperTag className={props.className}>
+    <WrapperTag className={props.className} ref={refId}>
       {React.Children.map(props.children, (child, i) => {
         return (
           <ChildTag
