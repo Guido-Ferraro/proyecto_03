@@ -17,6 +17,7 @@ interface Props {
   childClassName?: string;
   visible?: boolean;
   onComplete?: () => any;
+  display?: string;
 }
 
 export default function FadeIn(props: PropsWithChildren<Props>) {
@@ -28,6 +29,7 @@ export default function FadeIn(props: PropsWithChildren<Props>) {
   const [visibility, setVisibility] = useState(false);
   let visible =
     typeof props.visible === "undefined" ? visibility : props.visible;
+
   const visibilize = setVisibility;
   useEffect(() => {
     let count = React.Children.count(props.children);
@@ -57,21 +59,28 @@ export default function FadeIn(props: PropsWithChildren<Props>) {
   useEffect(() => {
     const faders = document.getElementsByClassName(props.className as string);
     if (faders) {
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          }
-          visibilize(true);
-          observer.unobserve(entry.target);
-        });
-      }, {});
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+              return;
+            }
+            visibilize(true);
+            observer.unobserve(entry.target);
+          });
+        },
+        { threshold: 0.2 }
+      );
       observer.observe(refId.current);
     }
   }, [props.className, visibilize]);
 
   return (
-    <WrapperTag className={props.className} ref={refId}>
+    <WrapperTag
+      className={props.className}
+      ref={refId}
+      style={{ display: `${props.display}` }}
+    >
       {React.Children.map(props.children, (child, i) => {
         return (
           <ChildTag
@@ -80,6 +89,7 @@ export default function FadeIn(props: PropsWithChildren<Props>) {
               transition: `opacity ${transitionDuration}ms, transform ${transitionDuration}ms`,
               transform: maxIsVisible > i ? "none" : "translateY(20px)",
               opacity: maxIsVisible > i ? 1 : 0,
+              display: `${props.display}`,
             }}
           >
             {child}

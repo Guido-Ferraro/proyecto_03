@@ -6,13 +6,13 @@ import FadeIn from "./FadeIn";
 
 const HomeButton = (): JSX.Element => {
   return (
-    <Link href="/" passHref>
-      <FadeIn transitionDuration={1000}>
+    <FadeIn transitionDuration={1000}>
+      <Link href="/" passHref>
         <div className={styles.logoContainer}>
           <Image src={logo} alt="Logo" className={styles.logoImage} />
         </div>
-      </FadeIn>
-    </Link>
+      </Link>
+    </FadeIn>
   );
 };
 

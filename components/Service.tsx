@@ -1,7 +1,6 @@
 import Image from "next/image";
 import service_icon from "../public/service_icon.svg";
 import styles from "../styles/Service.module.css";
-
 interface ServiceProps {
   title: string;
   content: string;

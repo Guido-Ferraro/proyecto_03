@@ -1,5 +1,6 @@
 import NavSectionIntro from "../components/NavSectionIntro";
 import styles from "../styles/Servicios.module.css";
+import FadeIn from "./../components/FadeIn";
 
 const Informacion = (): JSX.Element => {
   return (
@@ -9,15 +10,39 @@ const Informacion = (): JSX.Element => {
       <div className={styles.contentContainer}>
         <div className={styles.mottoWrap}>
           <div className={styles.heading}>
-            Holdich 272 | Bahía Blanca | Argentina
+            <FadeIn
+              delay={500}
+              transitionDuration={1000}
+              display={`inline-block`}
+            >
+              <span>Holdich 272 &nbsp;</span>
+            </FadeIn>
+            |
+            <FadeIn
+              delay={750}
+              transitionDuration={1000}
+              display={`inline-block`}
+            >
+              <span>&nbsp; Bahía Blanca &nbsp;</span>
+            </FadeIn>
+            |
+            <FadeIn
+              delay={1000}
+              transitionDuration={1000}
+              display={`inline-block`}
+            >
+              <span>&nbsp; Argentina</span>
+            </FadeIn>
           </div>
         </div>
       </div>
       <div className={styles.about}>
-        <p className={styles.content}>
-          Envíenos un mail con su consulta o inquietud y le responderemos a la
-          brevedad optiment@optiment.com.ar
-        </p>
+        <FadeIn delay={1250} transitionDuration={1000}>
+          <p className={styles.content}>
+            Envíenos un mail con su consulta o inquietud y le responderemos a la
+            brevedad optiment@optiment.com.ar
+          </p>
+        </FadeIn>
       </div>
     </>
   );

@@ -10,11 +10,11 @@ type NavProps = {
 
 const NavButton = ({ content, id, index }: NavProps): JSX.Element => {
   return (
-    <Link href={`/${id}`} passHref>
-      <FadeIn delay={250 * index} transitionDuration={1000}>
+    <FadeIn delay={250 * index} transitionDuration={1000}>
+      <Link href={`/${id}`} passHref>
         <span className={styles.Link}>{content}</span>
-      </FadeIn>
-    </Link>
+      </Link>
+    </FadeIn>
   );
 };
 
