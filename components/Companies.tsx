@@ -3,7 +3,7 @@ import styles from "../styles/Companies.module.css";
 import FadeIn from "./FadeIn";
 
 const Companies = (): JSX.Element => {
-  function importAll(r: __WebpackModuleApi.RequireContext) {
+  function importAll(r: any) {
     return r.keys().map(r);
   }
 
@@ -11,28 +11,33 @@ const Companies = (): JSX.Element => {
     require.context("./../public/empresas/", false, /\.(png|jpe?g|svg|bmp)$/),
   );
 
-  const imageList = images.map((value, index: number) => {
-    console.log(value);
-    const { src, width, height } = value.default;
-    const ratio: number = width / height;
-    return (
-      <FadeIn
-        delay={200 * index}
-        transitionDuration={1000}
-        key={src}
-        className={styles.logoContainer}
-      >
-        {" "}
-        <Image
-          src={src}
-          alt=""
-          width={ratio * 75}
-          height={75}
-          className={`${styles.logo} fader`}
-        />
-      </FadeIn>
-    );
-  });
+  const imageList = images.map(
+    (
+      value: { default: { src: any; width: any; height: any } },
+      index: number,
+    ) => {
+      console.log(value);
+      const { src, width, height } = value.default;
+      const ratio: number = width / height;
+      return (
+        <FadeIn
+          delay={200 * index}
+          transitionDuration={1000}
+          key={src}
+          className={styles.logoContainer}
+        >
+          {" "}
+          <Image
+            src={src}
+            alt=""
+            width={ratio * 75}
+            height={75}
+            className={`${styles.logo} fader`}
+          />
+        </FadeIn>
+      );
+    },
+  );
 
   return (
     <section className={styles.section}>
