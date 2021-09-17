@@ -20,25 +20,23 @@ const HomeGridElement = (props: HomeGridElementType): JSX.Element => {
     props;
   return (
     <div className={orientation}>
+      <FadeIn delay={250} transitionDuration={1000}>
+        <Image src={src} alt={alt} className={styles.image} />
+      </FadeIn>
       <div className={text}>
         <div className={styles.textWrapper}>
           <FadeIn delay={250} transitionDuration={1000}>
             <div className={styles.label}>{label}</div>
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.paragraph}>{paragraph}</p>
+            <Link href={`/${link}`} passHref>
+              <span className={styles.Link}>
+                <div className={styles.LinkDiv}>Más</div>
+              </span>
+            </Link>
           </FadeIn>
         </div>
-        <Link href={`/${link}`} passHref>
-          <FadeIn delay={250} transitionDuration={1000}>
-            <span className={styles.Link}>
-              <div className={styles.LinkDiv}>Más</div>
-            </span>
-          </FadeIn>
-        </Link>
       </div>
-      <FadeIn delay={250} transitionDuration={1000}>
-        <Image src={src} alt={alt} className={image} />
-      </FadeIn>
     </div>
   );
 };

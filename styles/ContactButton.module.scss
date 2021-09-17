@@ -34,3 +34,12 @@
   text-transform: uppercase;
   box-sizing: border-box;
 }
+
+@media (max-width: 975px) {
+  .a {
+    display: none;
+  }
+  .contactButton {
+    display: none;
+  }
+}

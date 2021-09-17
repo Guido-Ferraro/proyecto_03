@@ -6,8 +6,6 @@
   line-height: 28px;
   font-weight: 400;
   box-sizing: border-box;
-  margin-right: 30px;
-  margin-left: 30px;
 }
 
 .contentContainer {
@@ -85,4 +83,10 @@
   margin-top: 0;
   margin-bottom: 10px;
   opacity: 0.6;
+}
+
+@media (max-width: 400px) {
+  .heading{
+    font-size: 18px;
+  }
 }

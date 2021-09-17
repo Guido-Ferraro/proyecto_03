@@ -38,4 +38,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+@media (max-width: 975px) {
+  .a {
+    display: none;
+  }
+  .contactButton {
+    display: none;
+  }
+}
 /*# sourceMappingURL=ContactButton.module.css.map */

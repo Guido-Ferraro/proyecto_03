@@ -74,6 +74,16 @@
   margin-bottom: 120px;
   grid-column-gap: 80px;
   grid-row-gap: 60px;
-  grid-template-areas: ". . ." ". . .";
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 975px) {
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 750px) {
+  .grid{
+    grid-template-columns: 1fr;
+  }
 }

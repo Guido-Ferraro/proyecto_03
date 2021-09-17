@@ -7,8 +7,6 @@
   font-weight: 400;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-right: 30px;
-  margin-left: 30px;
 }
 
 .contentContainer {
@@ -97,5 +95,11 @@
   margin-top: 0;
   margin-bottom: 10px;
   opacity: 0.6;
+}
+
+@media (max-width: 400px) {
+  .heading {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=Empresa.module.css.map */

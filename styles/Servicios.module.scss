@@ -6,8 +6,6 @@
   line-height: 28px;
   font-weight: 400;
   box-sizing: border-box;
-  margin-right: 30px;
-  margin-left: 30px;
 }
 
 .contentContainer {
@@ -99,4 +97,37 @@
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.responsiveHeading{
+  -webkit-text-size-adjust: 100%;
+  font-family: Montserrat, sans-serif;
+  color: #1a1b1f;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: none;
+  display: none;
+}
+
+@media (max-width: 910px) {
+  .heading{
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .responsiveHeading{
+    font-size: 18px;
+  }
+  .headingWide{
+    display: none;
+  }
+  .responsiveHeading{
+    display: block;
+    font-size: 18px;
+  }
 }

@@ -3,13 +3,11 @@ import LandingContent from "../components/LandingContent";
 import styles from "../styles/Home.module.css";
 import Companies from "../components/Companies";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <div className={styles.homeContent}>
-      <div className={styles.landingContent}>
-        <Splash />
-        <LandingContent />
-      </div>
+      <Splash />
+      <LandingContent />
       <Companies />
     </div>
   );

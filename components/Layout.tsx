@@ -1,5 +1,5 @@
 import Header from "./Header";
-import Footer from "./Footer";
+//import Footer from "./Footer";
 import Head from "next/head";
 import { PropsWithChildren, ReactNode } from "react";
 import CallToAction from "../components/CallToAction";
@@ -15,7 +15,7 @@ const Layout = ({ children }: PropsWithChildren<{}>): JSX.Element => {
       <Header />
       <main>{children}</main>
       <CallToAction />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

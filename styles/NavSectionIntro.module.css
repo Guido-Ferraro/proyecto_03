@@ -22,8 +22,6 @@
   background-color: #000;
   background-image: none;
   color: #fff;
-  margin-right: 30px;
-  margin-left: 30px;
 }
 
 .content {
@@ -35,7 +33,7 @@
   color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 70%;
+  width: 100%;
   max-width: 1140px;
   text-align: center;
 }
@@ -53,5 +51,11 @@
   font-size: 64px;
   line-height: 80px;
   text-transform: none;
+}
+
+@media (max-width: 400px) {
+  .heading {
+    font-size: 32px;
+  }
 }
 /*# sourceMappingURL=NavSectionIntro.module.css.map */

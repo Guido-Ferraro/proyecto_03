@@ -87,8 +87,21 @@
   margin-bottom: 120px;
   grid-column-gap: 80px;
   grid-row-gap: 60px;
-      grid-template-areas: ". . ." ". . .";
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 975px) {
+  .grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=ServicesGrid.module.css.map */

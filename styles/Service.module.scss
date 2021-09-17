@@ -6,6 +6,7 @@
   line-height: 28px;
   font-weight: 400;
   box-sizing: border-box;
+  margin: 0 30px;
 }
 .image {
   -webkit-text-size-adjust: 100%;
@@ -42,4 +43,16 @@
   font-weight: 400;
   box-sizing: border-box;
   opacity: 0.6;
+}
+
+@media (max-width: 975px) {
+  .element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .paragraph{
+    text-align: center;
+  }
 }

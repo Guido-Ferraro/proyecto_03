@@ -48,4 +48,13 @@
   -ms-flex: 0 0 auto;
       flex: 0 0 auto;
 }
+
+@media (max-width: 975px) {
+  .menu {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+}
 /*# sourceMappingURL=Nav.module.css.map */

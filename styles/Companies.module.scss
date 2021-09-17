@@ -9,6 +9,8 @@
   margin-right: 30px;
   margin-left: 30px;
   padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -21,8 +23,6 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .text {
@@ -69,6 +69,7 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -80,4 +81,8 @@
     opacity: 1;
     transition: all 0.5s;
   }
+}
+
+.logoContainer{
+  margin: 15px;
 }

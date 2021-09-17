@@ -18,6 +18,8 @@ const LandingContent = (): JSX.Element => {
           link="empresa"
           src={home_about}
           orientation={styles.containerRight}
+          text={styles.textLeft}
+          image={styles.imageRight}
           alt={`Who we are`}
         />
         <HomeGridElement
@@ -29,8 +31,6 @@ const LandingContent = (): JSX.Element => {
           src={home_team}
           link="experiencia"
           orientation={styles.containerLeft}
-          text={styles.textRight}
-          image={styles.imageLeft}
           alt={`What we do`}
         />
       </div>
