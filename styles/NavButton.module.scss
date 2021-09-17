@@ -8,7 +8,7 @@
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
-  color: #222222;
+  color: #222;
   padding: 20px;
   text-align: left;
   margin-left: auto;
@@ -21,6 +21,7 @@
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
+
   &:hover,
   &:active {
     color: #32343a;

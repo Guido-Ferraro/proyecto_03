@@ -6,7 +6,7 @@
   max-width: 100%;
   display: inline-block;
   padding: 12px 25px;
-  border-radius: 0px;
+  border-radius: 0;
   background-color: #1a1b1f;
   transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   color: #fff;
@@ -17,12 +17,14 @@
   text-transform: uppercase;
   position: relative;
   z-index: 5;
+
   &:hover,
   &:active {
     cursor: pointer;
     opacity: 0.8;
   }
 }
+
 .contactButton {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -39,6 +41,7 @@
   .a {
     display: none;
   }
+
   .contactButton {
     display: none;
   }

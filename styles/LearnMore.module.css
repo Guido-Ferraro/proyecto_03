@@ -7,7 +7,7 @@
           box-sizing: border-box;
   max-width: 100%;
   display: inline-block;
-  border-radius: 0px;
+  border-radius: 0;
   -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   letter-spacing: 2px;
@@ -48,9 +48,9 @@
             box-sizing: border-box;
     max-width: 100%;
     display: inline-block;
-    border-radius: 0px;
-    -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
-    transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    border-radius: 0;
+    -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;

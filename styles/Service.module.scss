@@ -8,6 +8,7 @@
   box-sizing: border-box;
   margin: 0 30px;
 }
+
 .image {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -23,6 +24,7 @@
   display: block;
   margin-bottom: 30px;
 }
+
 .heading {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -34,6 +36,7 @@
   line-height: 34px;
   font-weight: 400;
 }
+
 .paragraph {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -46,13 +49,14 @@
 }
 
 @media (max-width: 975px) {
-  .element{
+  .element {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .paragraph{
+
+  .paragraph {
     text-align: center;
   }
 }

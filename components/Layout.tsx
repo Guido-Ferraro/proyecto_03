@@ -16,6 +16,7 @@ const Layout = ({ children }: PropsWithChildren<{}>): JSX.Element => {
       <Header />
       <main>{children}</main>
       <CallToAction />
+
       {/* <Footer /> */}
     </>
   );

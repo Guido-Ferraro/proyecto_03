@@ -11,13 +11,14 @@
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  background-position: 0px 0px;
+  background-position: 0 0;
   background-size: cover;
   height: 270px;
   background-color: #000;
   background-image: none;
   color: #fff;
 }
+
 .content {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -30,6 +31,7 @@
   max-width: 1140px;
   text-align: center;
 }
+
 .heading {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -45,7 +47,7 @@
 }
 
 @media (max-width: 400px) {
-  .heading{
-    font-size: 32px;  
+  .heading {
+    font-size: 32px;
   }
 }

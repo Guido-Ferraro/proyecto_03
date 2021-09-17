@@ -99,7 +99,7 @@
   max-width: 100%;
   display: inline-block;
   padding: 12px 25px;
-  border-radius: 0px;
+  border-radius: 0;
   background-color: #1a1b1f;
   -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
@@ -196,7 +196,7 @@
     max-width: 100%;
     display: inline-block;
     padding: 12px 25px;
-    border-radius: 0px;
+    border-radius: 0;
     background-color: #1a1b1f;
     -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
     transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;

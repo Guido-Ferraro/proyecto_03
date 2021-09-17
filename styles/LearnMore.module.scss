@@ -6,7 +6,7 @@
   box-sizing: border-box;
   max-width: 100%;
   display: inline-block;
-  border-radius: 0px;
+  border-radius: 0;
   transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   letter-spacing: 2px;
   text-decoration: none;
@@ -16,10 +16,12 @@
   line-height: 26px;
   background-color: #fff;
   color: #000;
+
   &:hover {
     cursor: pointer;
   }
 }
+
 .learnMoreDiv {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -42,8 +44,10 @@
     box-sizing: border-box;
     max-width: 100%;
     display: inline-block;
-    border-radius: 0px;
-    transition: background-color 400ms ease, opacity 400ms ease,
+    border-radius: 0;
+    transition:
+      background-color 400ms ease,
+      opacity 400ms ease,
       color 400ms ease;
     letter-spacing: 2px;
     text-decoration: none;
@@ -56,6 +60,7 @@
     background-color: #fff;
     color: #000;
   }
+
   .learnMoreDiv {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;

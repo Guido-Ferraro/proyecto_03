@@ -11,6 +11,7 @@
   grid-row-start: 1;
   grid-row-end: 2;
 }
+
 .image {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -28,6 +29,7 @@
   grid-row-start: 1;
   grid-row-end: 2;
 }
+
 .textWrapper {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -38,6 +40,7 @@
   box-sizing: border-box;
   margin-bottom: 30px;
 }
+
 .label {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -51,6 +54,7 @@
   text-transform: uppercase;
   opacity: 0.6;
 }
+
 .title {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -62,6 +66,7 @@
   margin-bottom: 20px;
   font-weight: 400;
 }
+
 .paragraph {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -74,6 +79,7 @@
   margin-bottom: 40px;
   opacity: 0.6;
 }
+
 .Link {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -82,7 +88,7 @@
   max-width: 100%;
   display: inline-block;
   padding: 12px 25px;
-  border-radius: 0px;
+  border-radius: 0;
   background-color: #1a1b1f;
   transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   color: #fff;
@@ -91,6 +97,7 @@
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
+
   &:hover,
   &:active {
     cursor: pointer;
@@ -98,6 +105,7 @@
     color: #fff;
   }
 }
+
 .LinkDiv {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -111,7 +119,6 @@
 }
 
 @media (max-width: 975px) {
-
   .textWrapper {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
@@ -124,7 +131,7 @@
     margin: 30px;
   }
 
-  .label{
+  .label {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
     color: #1a1b1f;
@@ -139,7 +146,8 @@
     opacity: 0.6;
     margin-top: 40px;
   }
-  .title{
+
+  .title {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
     color: #1a1b1f;
@@ -151,7 +159,8 @@
     margin-bottom: 20px;
     font-weight: 400;
   }
-  .paragraph{
+
+  .paragraph {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
     color: #1a1b1f;
@@ -164,7 +173,8 @@
     margin-bottom: 40px;
     opacity: 0.6;
   }
-  .Link{
+
+  .Link {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
@@ -173,7 +183,7 @@
     max-width: 100%;
     display: inline-block;
     padding: 12px 25px;
-    border-radius: 0px;
+    border-radius: 0;
     background-color: #1a1b1f;
     transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
     color: #fff;
@@ -185,7 +195,8 @@
     -webkit-box-pack: center;
     justify-content: center;
   }
-  .LinkDiv{
+
+  .LinkDiv {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
     font-weight: 400;

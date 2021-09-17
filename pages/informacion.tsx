@@ -9,7 +9,7 @@ const Informacion = (): JSX.Element => {
 
       <div className={styles.contentContainer}>
         <div className={styles.mottoWrap}>
-          <div className={`${styles.heading} ${styles.headingWide} `}>
+          <div className={`${styles.heading} ${styles.headingWide}`}>
             <FadeIn
               delay={500}
               transitionDuration={1000}

@@ -11,11 +11,12 @@
   position: relative;
   float: left;
   text-decoration: none;
-  color: #333333;
+  color: #333;
   z-index: 1;
   width: 150px;
-  outline: 5px solid #333333;
+  outline: 5px solid #333;
   outline-offset: -9px;
+
   &:hover,
   &:active {
     transition: opacity 200ms ease;
@@ -30,7 +31,7 @@
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
-  color: #333333;
+  color: #333;
   width: 108px;
   box-sizing: border-box;
   border: 0;

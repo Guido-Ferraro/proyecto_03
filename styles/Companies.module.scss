@@ -75,6 +75,7 @@
 .logo {
   filter: grayscale(1);
   opacity: 0.8;
+
   &:hover,
   &:active {
     filter: grayscale(0);
@@ -83,6 +84,6 @@
   }
 }
 
-.logoContainer{
+.logoContainer {
   margin: 15px;
 }

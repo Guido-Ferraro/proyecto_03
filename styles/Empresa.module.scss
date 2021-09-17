@@ -21,6 +21,7 @@
   margin-right: auto;
   margin-left: auto;
 }
+
 .mottoWrap {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -35,6 +36,7 @@
   margin-left: auto;
   text-align: center;
 }
+
 .heading {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -48,6 +50,7 @@
   font-weight: 400;
   text-transform: none;
 }
+
 .divider {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -59,6 +62,7 @@
   height: 1px;
   background-color: #eee;
 }
+
 .about {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -71,6 +75,7 @@
   margin: 80px auto;
   text-align: center;
 }
+
 .content {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -85,8 +90,8 @@
   opacity: 0.6;
 }
 
-@media (max-width: 400px) {
-  .heading{
+@media (max-width: 910px) {
+  .heading {
     font-size: 18px;
   }
 }

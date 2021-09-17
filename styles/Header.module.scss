@@ -7,7 +7,7 @@
   font-weight: 400;
   box-sizing: border-box;
   position: relative;
-  background: #dddddd;
+  background: #ddd;
   z-index: 1000;
   display: flex;
   padding: 30px 50px;
@@ -15,6 +15,7 @@
   align-items: center;
   background-color: transparent;
 }
+
 .navWrapper {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;
@@ -43,7 +44,7 @@
     font-weight: 400;
     box-sizing: border-box;
     position: relative;
-    background: #dddddd;
+    background: #ddd;
     z-index: 1000;
     display: flex;
     -webkit-box-align: center;
@@ -53,6 +54,7 @@
     padding-right: 20px;
     padding-left: 20px;
   }
+
   .navWrapper {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
