@@ -4,6 +4,7 @@ import Head from "next/head";
 import { PropsWithChildren, ReactNode } from "react";
 import CallToAction from "../components/CallToAction";
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 const Layout = ({ children }: PropsWithChildren<{}>): JSX.Element => {
   return (
     <>

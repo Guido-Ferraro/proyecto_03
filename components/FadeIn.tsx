@@ -4,6 +4,7 @@ import React, {
   useEffect,
   useState,
 } from "react";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { v4: uuidv4 } = require("uuid");
 
 import { useRef } from "react";
@@ -27,7 +28,7 @@ export default function FadeIn(props: PropsWithChildren<Props>) {
   const WrapperTag = props.wrapperTag || "div";
   const ChildTag = props.childTag || "div";
   const [visibility, setVisibility] = useState(false);
-  let visible =
+  const visible =
     typeof props.visible === "undefined" ? visibility : props.visible;
 
   const visibilize = setVisibility;
@@ -69,7 +70,7 @@ export default function FadeIn(props: PropsWithChildren<Props>) {
             observer.unobserve(entry.target);
           });
         },
-        { threshold: 0.2 }
+        { threshold: 0.2 },
       );
       observer.observe(refId.current);
     }
