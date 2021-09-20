@@ -1,0 +1,112 @@
+.menu,
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 975px) {
+  .menu {
+    font-family: Montserrat, sans-serif;
+    color: #1a1b1f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    overflow: visible;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: -70px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-transition: -webkit-transform 400ms ease 0s;
+    transition: -webkit-transform 400ms ease 0s;
+    transition: transform 400ms ease 0s;
+    transition: transform 400ms ease 0s, -webkit-transform 400ms ease 0s;
+    z-index: 1;
+    height: 200px;
+  }
+  .nav {
+    -webkit-text-size-adjust: 100%;
+    font-family: Montserrat, sans-serif;
+    color: #1a1b1f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #c8c8c8;
+    text-align: center;
+    overflow: visible;
+    min-width: 200px;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    background-color: #fff;
+    top: 0;
+  }
+  .menuButton {
+    border: none;
+    background-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    font-family: Montserrat, sans-serif;
+    color: #1a1b1f;
+    line-height: 28px;
+    font-weight: 400;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    padding: 0;
+    display: block;
+    z-index: 2;
+  }
+  .image {
+    -webkit-text-size-adjust: 100%;
+    font-family: Montserrat, sans-serif;
+    color: #1a1b1f;
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: block;
+  }
+}
+/*# sourceMappingURL=DropdownMenu.module.css.map */

@@ -1,0 +1,92 @@
+
+.menu,
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 975px) {
+  .menu {
+    font-family: Montserrat, sans-serif;
+    color: #1a1b1f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    overflow: visible;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: -70px;
+    justify-self: center;
+    align-self: center;
+    transition: transform 400ms ease 0s;
+    z-index: 1;
+    height: 200px;
+  }
+
+  .nav {
+    -webkit-text-size-adjust: 100%;
+    font-family: Montserrat, sans-serif;
+    color: #1a1b1f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    box-sizing: border-box;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #c8c8c8;
+    text-align: center;
+    overflow: visible;
+    min-width: 200px;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    background-color: #fff;
+    top: 0;
+    //transform: translateY(0px) translateX(0px);
+  }
+
+  .menuButton {
+    border: none;
+    background-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    font-family: Montserrat, sans-serif;
+    color: #1a1b1f;
+    line-height: 28px;
+    font-weight: 400;
+    box-sizing: border-box;
+    position: relative;
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    padding: 0;
+    display: block;
+    z-index: 2;
+  }
+
+  .image {
+    -webkit-text-size-adjust: 100%;
+    font-family: Montserrat, sans-serif;
+    color: #1a1b1f;
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    box-sizing: border-box;
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: block;
+  }
+}

@@ -38,12 +38,13 @@
   flex: 0 0 auto;
 }
 
+.dropdownMenu,
+.dropdownNav {
+  display: none;
+}
+
 @media (max-width: 975px) {
   .menu {
-    display: none;
-  }
-
-  .nav {
     display: none;
   }
 }
