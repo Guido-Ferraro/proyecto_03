@@ -10,11 +10,9 @@
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-    overflow: visible;
-    width: 100vw;
-    position: fixed;
-    left: 0;
-    top: -70px;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: center;
@@ -44,17 +42,15 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    height: 250px;
+    -ms-flex-pack: center;
+        justify-content: center;
+    height: 200px;
     position: absolute;
     left: 0;
     right: 0;
     background: #c8c8c8;
     text-align: center;
     overflow: visible;
-    min-width: 200px;
     -webkit-box-pack: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -63,7 +59,7 @@
     -ms-flex: 0 0 auto;
         flex: 0 0 auto;
     background-color: #fff;
-    top: 0;
+    top: -10px;
   }
   .menuButton {
     border: none;
@@ -87,6 +83,7 @@
     padding: 0;
     display: block;
     z-index: 2;
+    margin-right: 35px;
   }
   .image {
     -webkit-text-size-adjust: 100%;

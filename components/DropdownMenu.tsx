@@ -7,40 +7,42 @@ const DropdownMenu = ({ children }: PropsWithChildren<{}>): JSX.Element => {
   const [menu, setMenu] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
 
-  const handleClick = (): void => {
+  useEffect(() => {
     const menuView = document.getElementById("menuView") as HTMLElement;
+    const menuButton = document.getElementById("menuButton") as HTMLElement;
+  }, []);
+
+  const handleExitMenu = (): void => {
+    menuView.style.transform = "translateY(-150px)";
+    setTimeout(() => {
+      menuView.style.display = "none";
+    }, 400);
+  };
+
+  const handleOpenMenu = (): void => {
+    menuView.style.display = "block";
+    setTimeout(() => {
+      menuView.style.transform = "translateY(150px)";
+    }, 1);
+  };
+
+  const handleClick = (): void => {
     setIsDisabled(true);
     setMenu((toggle) => !toggle);
-    if (menu) {
-      menuView.style.transform = "translateY(-150px)";
-      setTimeout(() => {
-        menuView.style.display = "none";
-      }, 400);
-    } else {
-      menuView.style.display = "block";
-      setTimeout(() => {
-        menuView.style.transform = "translateY(150px)";
-      }, 1);
-    }
+    menu ? handleExitMenu() : handleOpenMenu();
     setTimeout(() => {
       setIsDisabled(false);
     }, 500);
   };
 
-  const listener = (e: Event) => {
-    const menuView = document.getElementById("menuView") as HTMLElement;
-    const menuButton = document.getElementById("menuButton") as HTMLElement;
+  const listener = (e: Event): void => {
     if (
-      !menuView?.contains(e.target as Node) &&
-      !menuButton?.contains(e.target as Node) &&
+      !menuView.contains(e.target as Node) &&
+      !menuButton.contains(e.target as Node) &&
       menu
     ) {
-      console.log("click");
       setMenu(false);
-      menuView.style.transform = "translateY(-150px)";
-      setTimeout(() => {
-        menuView.style.display = "none";
-      }, 500);
+      handleExitMenu();
     }
   };
 

@@ -32,4 +32,48 @@
   opacity: 0.9;
   cursor: pointer;
 }
+
+.LinkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 100vw;
+}
+
+.LinkContainer:hover, .LinkContainer:active {
+  -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+  transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+  color: #32343a;
+  opacity: 0.9;
+  background-color: #f7f8f9;
+}
+
+@media (max-width: 975px) {
+  .Link {
+    text-align: center;
+  }
+  .Link:hover {
+    margin: 0;
+    width: 100vw;
+    -webkit-text-size-adjust: 100%;
+    font-family: Montserrat, sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: top;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    outline: 0;
+  }
+}
 /*# sourceMappingURL=NavButton.module.css.map */

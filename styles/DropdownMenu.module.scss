@@ -11,11 +11,9 @@
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-    overflow: visible;
-    width: 100vw;
-    position: fixed;
-    left: 0;
-    top: -70px;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
     justify-self: center;
     align-self: center;
     transition: transform 400ms ease 0s;
@@ -34,23 +32,21 @@
     float: right;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 250px;
+    justify-content: center;
+    height: 200px;
     position: absolute;
     left: 0;
     right: 0;
     background: #c8c8c8;
     text-align: center;
     overflow: visible;
-    min-width: 200px;
     -webkit-box-pack: center;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
     background-color: #fff;
-    top: 0;
-    //transform: translateY(0px) translateX(0px);
+    top: -10px;
   }
 
   .menuButton {
@@ -71,6 +67,7 @@
     padding: 0;
     display: block;
     z-index: 2;
+    margin-right: 35px;
   }
 
   .image {
