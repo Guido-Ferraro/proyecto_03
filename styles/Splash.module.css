@@ -82,32 +82,28 @@
   margin: 0 15px;
 }
 
-@media (max-width: 975px) {
+/*@media (max-width: 975px) {
   .splashSection {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    box-sizing: border-box;
     display: flex;
     height: 620px;
     margin-bottom: 100px;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     background-color: #f4f4f4;
     background-image: url("https://assets.website-files.com/5c6eb5400253230156de2bd6/5cdc00e3a4217f7862153ae2_portfolio%202%20-%20wide.svg");
     background-position: 0 0;
     background-size: cover;
     color: #fff;
   }
+
   .splashContentWrapper {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
@@ -115,13 +111,13 @@
     line-height: 28px;
     font-weight: 400;
     color: #fff;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     max-width: 1140px;
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
   }
+
   .splashContent {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
@@ -130,34 +126,33 @@
     font-weight: 400;
     color: #fff;
     text-align: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin-right: auto;
     margin-bottom: 35px;
     margin-left: auto;
     width: auto;
   }
+
   .splashTitle {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     color: #fff;
     text-align: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin-top: 10px;
     margin-bottom: 10px;
     text-transform: none;
     font-size: 36px;
     line-height: 48px;
   }
+
   .splashParagraph {
     -webkit-text-size-adjust: 100%;
     font-family: Montserrat, sans-serif;
     color: #fff;
     text-align: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 16px;
@@ -165,4 +160,5 @@
     opacity: 0.6;
   }
 }
+*/
 /*# sourceMappingURL=Splash.module.css.map */

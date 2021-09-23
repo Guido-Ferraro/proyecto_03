@@ -7,19 +7,16 @@ const DropdownMenu = ({ children }: PropsWithChildren<{}>): JSX.Element => {
   const [menu, setMenu] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
 
-  useEffect(() => {
+  const handleExitMenu = (exitLag: number): void => {
     const menuView = document.getElementById("menuView") as HTMLElement;
-    const menuButton = document.getElementById("menuButton") as HTMLElement;
-  }, []);
-
-  const handleExitMenu = (): void => {
     menuView.style.transform = "translateY(-150px)";
     setTimeout(() => {
       menuView.style.display = "none";
-    }, 400);
+    }, exitLag);
   };
 
   const handleOpenMenu = (): void => {
+    const menuView = document.getElementById("menuView") as HTMLElement;
     menuView.style.display = "block";
     setTimeout(() => {
       menuView.style.transform = "translateY(150px)";
@@ -29,22 +26,32 @@ const DropdownMenu = ({ children }: PropsWithChildren<{}>): JSX.Element => {
   const handleClick = (): void => {
     setIsDisabled(true);
     setMenu((toggle) => !toggle);
-    menu ? handleExitMenu() : handleOpenMenu();
+    menu ? handleExitMenu(400) : handleOpenMenu();
     setTimeout(() => {
       setIsDisabled(false);
-    }, 500);
+    }, 401);
   };
 
   const listener = (e: Event): void => {
+    const menuButton = document.getElementById("menuButton") as HTMLElement;
+    const menuView = document.getElementById("menuView") as HTMLElement;
     if (
       !menuView.contains(e.target as Node) &&
       !menuButton.contains(e.target as Node) &&
       menu
     ) {
       setMenu(false);
-      handleExitMenu();
+      handleExitMenu(400);
     }
   };
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (document.body.clientWidth > 975) {
+        handleExitMenu(0);
+      }
+    });
+  }, []);
 
   useEffect(() => {
     window.addEventListener("click", listener);

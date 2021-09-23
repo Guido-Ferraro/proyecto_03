@@ -7,7 +7,8 @@
   font-weight: 400;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
+  width: 100%;
+  position: relative;
   background: #ddd;
   z-index: 1000;
   display: -webkit-box;
@@ -64,6 +65,7 @@
     -ms-flex-align: center;
         align-items: center;
     background-color: transparent;
+    padding: 5px 0;
   }
   .navWrapper {
     -webkit-text-size-adjust: 100%;

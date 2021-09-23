@@ -112,34 +112,15 @@
   margin-left: auto;
 }
 
-.responsiveHeading {
-  -webkit-text-size-adjust: 100%;
-  font-family: Montserrat, sans-serif;
-  color: #1a1b1f;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  font-size: 36px;
-  line-height: 50px;
-  font-weight: 400;
-  text-transform: none;
+.space {
   display: none;
 }
 
-@media (max-width: 910px) {
-  .heading {
-    font-size: 18px;
+@media (max-width: 859px) {
+  .space {
+    display: inline;
   }
-}
-
-@media (max-width: 470px) {
-  .responsiveHeading {
-    font-size: 18px;
-    display: block;
-  }
-  .heading {
+  .bar {
     display: none;
   }
 }

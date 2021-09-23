@@ -18,7 +18,8 @@
     align-self: center;
     transition: transform 400ms ease 0s;
     z-index: 1;
-    height: 200px;
+    height: 300px;
+    top: -100px;
   }
 
   .nav {
@@ -46,7 +47,6 @@
     -webkit-box-flex: 0;
     flex: 0 0 auto;
     background-color: #fff;
-    top: -10px;
   }
 
   .menuButton {
@@ -67,7 +67,7 @@
     padding: 0;
     display: block;
     z-index: 2;
-    margin-right: 35px;
+    margin-right: 25px;
   }
 
   .image {

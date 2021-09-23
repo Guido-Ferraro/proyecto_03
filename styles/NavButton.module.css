@@ -33,25 +33,6 @@
   cursor: pointer;
 }
 
-.LinkContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50px;
-  width: 100vw;
-}
-
-.LinkContainer:hover, .LinkContainer:active {
-  -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
-  transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
-  color: #32343a;
-  opacity: 0.9;
-  background-color: #f7f8f9;
-}
-
 @media (max-width: 975px) {
   .Link {
     text-align: center;
@@ -74,6 +55,23 @@
     text-transform: uppercase;
     text-align: center;
     outline: 0;
+  }
+  .LinkContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    width: 100vw;
+  }
+  .LinkContainer:hover, .LinkContainer:active {
+    -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    color: #32343a;
+    opacity: 0.9;
+    background-color: #f7f8f9;
   }
 }
 /*# sourceMappingURL=NavButton.module.css.map */

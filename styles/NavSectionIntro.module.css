@@ -53,9 +53,10 @@
   text-transform: none;
 }
 
-@media (max-width: 400px) {
+/*@media (max-width: 400px) {
   .heading {
     font-size: 32px;
   }
 }
+*/
 /*# sourceMappingURL=NavSectionIntro.module.css.map */

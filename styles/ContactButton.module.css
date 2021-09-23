@@ -19,6 +19,7 @@
   text-transform: uppercase;
   position: relative;
   z-index: 5;
+  margin-right: 35px;
 }
 
 .a:hover, .a:active {

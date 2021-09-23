@@ -31,21 +31,6 @@
   }
 }
 
-.LinkContainer {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  width: 100vw;
-
-  &:hover,
-  &:active {
-    transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
-    color: #32343a;
-    opacity: 0.9;
-    background-color: #f7f8f9;
-  }
-}
-
 @media (max-width: 975px) {
   .Link {
     text-align: center;
@@ -68,5 +53,20 @@
     text-transform: uppercase;
     text-align: center;
     outline: 0;
+  }
+
+  .LinkContainer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+
+    &:hover,
+    &:active {
+      transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+      color: #32343a;
+      opacity: 0.9;
+      background-color: #f7f8f9;
+    }
   }
 }

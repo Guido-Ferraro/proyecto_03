@@ -43,4 +43,12 @@
   vertical-align: middle;
   display: block;
 }
+
+@media (max-width: 975px) {
+  .logoContainer {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-left: 0px;
+  }
+}
 /*# sourceMappingURL=HomeButton.module.css.map */

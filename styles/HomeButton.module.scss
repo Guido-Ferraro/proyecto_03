@@ -40,3 +40,10 @@
   vertical-align: middle;
   display: block;
 }
+
+@media (max-width: 975px) {
+  .logoContainer {
+    transform: scale(0.7);
+    margin-left: 0;
+  }
+}

@@ -23,7 +23,8 @@
     transition: transform 400ms ease 0s;
     transition: transform 400ms ease 0s, -webkit-transform 400ms ease 0s;
     z-index: 1;
-    height: 200px;
+    height: 300px;
+    top: -100px;
   }
   .nav {
     -webkit-text-size-adjust: 100%;
@@ -59,7 +60,6 @@
     -ms-flex: 0 0 auto;
         flex: 0 0 auto;
     background-color: #fff;
-    top: -10px;
   }
   .menuButton {
     border: none;
@@ -83,7 +83,7 @@
     padding: 0;
     display: block;
     z-index: 2;
-    margin-right: 35px;
+    margin-right: 25px;
   }
   .image {
     -webkit-text-size-adjust: 100%;

@@ -15,47 +15,27 @@ const Informacion = (): JSX.Element => {
               transitionDuration={1000}
               display={`inline-block`}
             >
-              <span>Holdich 272 &nbsp;</span>
+              <span>Holdich 272</span>
             </FadeIn>
-            |
-            <FadeIn
-              delay={750}
-              transitionDuration={1000}
-              display={`inline-block`}
-            >
-              <span>&nbsp; Bahía Blanca &nbsp;</span>
-            </FadeIn>
-            |
-            <FadeIn
-              delay={1000}
-              transitionDuration={1000}
-              display={`inline-block`}
-            >
-              <span>&nbsp; Argentina</span>
-            </FadeIn>
-          </div>
 
-          <div className={styles.responsiveHeading}>
-            <FadeIn
-              delay={500}
-              transitionDuration={1000}
-              display={`inline-block`}
-            >
-              <span>&nbsp; Holdich 272 &nbsp;</span>
-            </FadeIn>
+            <span className={styles.bar}>&nbsp;|&nbsp;</span>
+
+            <br className={styles.space} />
             <FadeIn
               delay={750}
               transitionDuration={1000}
               display={`inline-block`}
             >
-              <span>&nbsp; Bahía Blanca &nbsp;</span>
+              <span> Bahía Blanca </span>
             </FadeIn>
+            <br className={styles.space} />
+            <span className={styles.bar}>&nbsp;|&nbsp;</span>
             <FadeIn
               delay={1000}
               transitionDuration={1000}
               display={`inline-block`}
             >
-              <span>&nbsp; Argentina &nbsp;</span>
+              <span>Argentina</span>
             </FadeIn>
           </div>
         </div>
