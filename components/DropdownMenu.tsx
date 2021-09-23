@@ -40,10 +40,13 @@ const DropdownMenu = ({ children }: PropsWithChildren<{}>): JSX.Element => {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", () => {
+    window.addEventListener("resize", (): void => {
       if (document.body.clientWidth > 975) {
         handleExitMenu(0);
       }
+    });
+    window.addEventListener("scroll", (): void => {
+      handleExitMenu(400);
     });
   }, []);
 
