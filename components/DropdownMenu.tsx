@@ -32,14 +32,8 @@ const DropdownMenu = ({ children }: PropsWithChildren<{}>): JSX.Element => {
     }, 401);
   };
 
-  const listener = (e: Event): void => {
-    const menuButton = document.getElementById("menuButton") as HTMLElement;
-    const menuView = document.getElementById("menuView") as HTMLElement;
-    if (
-      !menuView.contains(e.target as Node) &&
-      !menuButton.contains(e.target as Node) &&
-      menu
-    ) {
+  const listener = (): void => {
+    if (menu) {
       setMenu(false);
       handleExitMenu(400);
     }
