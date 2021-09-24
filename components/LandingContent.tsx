@@ -1,8 +1,8 @@
 import Motto from "./Motto";
 import HomeGridElement from "./HomeGridElement";
 import styles from "../styles/LandingContent.module.css";
-import home_about from "../public/home_about.svg";
-import home_team from "../public/home_team.svg";
+import home_about from "../public/home_about.jpg";
+import home_team from "../public/home_team.jpg";
 
 const LandingContent = (): JSX.Element => {
   return (

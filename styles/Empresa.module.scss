@@ -1,3 +1,28 @@
+.wrapper {
+  -webkit-text-size-adjust: 100%;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 100px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-size: cover;
+  height: 620px;
+  background-color: #000;
+  color: #fff;
+  background-position: center;
+  //background-image: url("../public/intro_servicios.jpg");
+}
+
+.empresa {
+  background-image: url("../public/intro_empresa.jpg");
+}
+
 .section {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;

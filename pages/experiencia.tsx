@@ -3,13 +3,11 @@ import styles from "../styles/Servicios.module.css";
 import FadeIn from "./../components/FadeIn";
 
 const Experiencia = (): JSX.Element => {
-  const backgroundImageRule = "url('../public/intro_experiencia.jpg')";
   return (
     <>
-      <NavSectionIntro
-        title={"Experiencia"}
-        backgroundImageRule={backgroundImageRule}
-      />
+      <div className={`${styles.wrapper} ${styles.experiencia}`}>
+        <NavSectionIntro title={"Experiencia"} />
+      </div>
 
       <div className={styles.contentContainer}>
         <div className={styles.mottoWrap}>
@@ -22,7 +20,7 @@ const Experiencia = (): JSX.Element => {
       </div>
       <div className={styles.divider}></div>
       <div className={styles.about}>
-        <p className={styles.content}>
+        <div className={styles.content}>
           <FadeIn delay={250} transitionDuration={1000}>
             <p>
               Tanto en petroquímica, del gas y del petróleo, como así también en
@@ -46,7 +44,7 @@ const Experiencia = (): JSX.Element => {
               operación.
             </p>
           </FadeIn>
-        </p>
+        </div>
       </div>
     </>
   );

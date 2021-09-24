@@ -3,13 +3,11 @@ import styles from "../styles/Empresa.module.css";
 import FadeIn from "./../components/FadeIn";
 
 const Empresa = (): JSX.Element => {
-  const backgroundImageRule = "url('../public/intro_empresa.jpeg')";
   return (
     <>
-      <NavSectionIntro
-        title={"Nosotros"}
-        backgroundImageRule={backgroundImageRule}
-      />
+      <div className={`${styles.wrapper} ${styles.empresa}`}>
+        <NavSectionIntro title={"Nosotros"} />{" "}
+      </div>
       <div className={styles.contentContainer}>
         <div className={styles.mottoWrap}>
           <FadeIn delay={500} transitionDuration={1000}>
@@ -22,7 +20,7 @@ const Empresa = (): JSX.Element => {
       </div>
       <div className={styles.divider}></div>
       <div className={styles.about}>
-        <p className={styles.content}>
+        <div className={styles.content}>
           <FadeIn delay={125} transitionDuration={1000}>
             <p>
               Nuestra misión es aportar respuestas tecnológicas desde el campo
@@ -51,7 +49,7 @@ const Empresa = (): JSX.Element => {
               fines de mantener estándares competitivos.
             </p>
           </FadeIn>
-        </p>
+        </div>
       </div>
       <div className="divider"></div>
     </>

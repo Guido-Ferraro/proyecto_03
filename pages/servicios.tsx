@@ -3,13 +3,12 @@ import ServicesGrid from "../components/ServicesGrid";
 import styles from "../styles/Servicios.module.css";
 import FadeIn from "../components/FadeIn";
 const Servicios = (): JSX.Element => {
-  const backgroundImageRule = "url('../public/intro_servicios.jpg')";
   return (
     <>
-      <NavSectionIntro
-        title={"Servicios"}
-        backgroundImageRule={backgroundImageRule}
-      />
+      <div className={`${styles.wrapper} ${styles.servicios}`}>
+        <NavSectionIntro title={"Servicios"} />
+      </div>
+
       <div className={styles.contentContainer}>
         <div className={styles.mottoWrap}>
           <FadeIn delay={500} transitionDuration={1000}>
@@ -23,7 +22,7 @@ const Servicios = (): JSX.Element => {
       </div>
       <div className={styles.divider}></div>
       <div className={styles.about}>
-        <p className={styles.content}>
+        <div className={styles.content}>
           <FadeIn delay={250} transitionDuration={1000}>
             <p>
               El alcance de nuestros servicios está en el marco de los balances
@@ -31,7 +30,7 @@ const Servicios = (): JSX.Element => {
               parámetros, control estadístico de procesos, programación de la
               producción, planeamiento operativo, táctico y estratégico, y
               reducción de costos energéticos.
-              <p></p>
+              <br />
             </p>
           </FadeIn>
           <FadeIn delay={250} transitionDuration={1000}>
@@ -42,7 +41,7 @@ const Servicios = (): JSX.Element => {
               y la rentabilidad de su empresa.
             </p>
           </FadeIn>
-        </p>
+        </div>
       </div>
       <div className="divider"></div>
       <div className={styles.divider}></div>

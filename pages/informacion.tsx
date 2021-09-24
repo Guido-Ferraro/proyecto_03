@@ -3,14 +3,16 @@ import styles from "../styles/Servicios.module.css";
 import FadeIn from "./../components/FadeIn";
 
 const Informacion = (): JSX.Element => {
-  const backgroundImageRule = "url('../public/intro_infp.jpg')";
+  const backgroundImageRule = "url('../public/intro_info.jpg')";
 
   return (
     <>
-      <NavSectionIntro
-        title={"Información"}
-        backgroundImageRule={backgroundImageRule}
-      />
+      <div className={`${styles.wrapper} ${styles.info}`}>
+        <NavSectionIntro
+          title={"Información"}
+          backgroundImageRule={backgroundImageRule}
+        />
+      </div>
 
       <div className={styles.contentContainer}>
         <div className={styles.mottoWrap}>
