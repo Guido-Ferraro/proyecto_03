@@ -2,10 +2,8 @@ import NavSectionIntro from "../components/NavSectionIntro";
 import ServicesGrid from "../components/ServicesGrid";
 import styles from "../styles/Servicios.module.css";
 import FadeIn from "../components/FadeIn";
-
 const Servicios = (): JSX.Element => {
-  const backgroundImageRule =
-    "url('http://www.ventusprocess.com/wp-content/uploads/2015/10/ventus-slider1-1499x630.jpg')";
+  const backgroundImageRule = "url('../public/intro_servicios.jpg')";
   return (
     <>
       <NavSectionIntro

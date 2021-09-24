@@ -2,14 +2,15 @@ import { useEffect } from "react";
 import styles from "../styles/NavSectionIntro.module.css";
 import FadeIn from "./FadeIn";
 interface NavSectionIntroProps {
-  title: string;
   backgroundImageRule: string;
+  title: string;
 }
 
 const NavSectionIntro = (props: NavSectionIntroProps): JSX.Element => {
   useEffect(() => {
     const box = document.getElementById("box") as HTMLElement;
     box.style.backgroundImage = props.backgroundImageRule;
+    //console.log(box.style.backgroundImage);
   }, [props.backgroundImageRule]);
 
   return (

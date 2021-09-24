@@ -3,8 +3,7 @@ import styles from "../styles/Servicios.module.css";
 import FadeIn from "./../components/FadeIn";
 
 const Informacion = (): JSX.Element => {
-  const backgroundImageRule =
-    "url('http://operationslog.com/images/equiptmentStatus.jpg')";
+  const backgroundImageRule = "url('../public/intro_infp.jpg')";
 
   return (
     <>

@@ -3,8 +3,7 @@ import styles from "../styles/Empresa.module.css";
 import FadeIn from "./../components/FadeIn";
 
 const Empresa = (): JSX.Element => {
-  const backgroundImageRule =
-    "url('https://911bplaw.com/wp-content/uploads/2018/09/Electrocution-Page-New-Image.jpeg')";
+  const backgroundImageRule = "url('../public/intro_empresa.jpeg')";
   return (
     <>
       <NavSectionIntro
