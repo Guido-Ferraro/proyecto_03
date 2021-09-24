@@ -3,9 +3,14 @@ import styles from "../styles/Empresa.module.css";
 import FadeIn from "./../components/FadeIn";
 
 const Empresa = (): JSX.Element => {
+  const backgroundImageRule =
+    "url('https://911bplaw.com/wp-content/uploads/2018/09/Electrocution-Page-New-Image.jpeg')";
   return (
     <>
-      <NavSectionIntro title={"Nosotros"} />
+      <NavSectionIntro
+        title={"Nosotros"}
+        backgroundImageRule={backgroundImageRule}
+      />
       <div className={styles.contentContainer}>
         <div className={styles.mottoWrap}>
           <FadeIn delay={500} transitionDuration={1000}>

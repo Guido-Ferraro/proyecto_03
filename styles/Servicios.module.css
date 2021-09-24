@@ -124,4 +124,10 @@
     display: none;
   }
 }
+
+@media (max-width: 809px) {
+  .space {
+    display: none;
+  }
+}
 /*# sourceMappingURL=Servicios.module.css.map */

@@ -4,9 +4,14 @@ import styles from "../styles/Servicios.module.css";
 import FadeIn from "../components/FadeIn";
 
 const Servicios = (): JSX.Element => {
+  const backgroundImageRule =
+    "url('http://www.ventusprocess.com/wp-content/uploads/2015/10/ventus-slider1-1499x630.jpg')";
   return (
     <>
-      <NavSectionIntro title={"Servicios"} />
+      <NavSectionIntro
+        title={"Servicios"}
+        backgroundImageRule={backgroundImageRule}
+      />
       <div className={styles.contentContainer}>
         <div className={styles.mottoWrap}>
           <FadeIn delay={500} transitionDuration={1000}>
