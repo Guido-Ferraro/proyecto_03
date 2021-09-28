@@ -19,13 +19,13 @@ const CallToAction = (): JSX.Element => {
               </div>
             </FadeIn>
           </div>
-          <Link href={`/información`} passHref>
-            <FadeIn delay={250} transitionDuration={1000}>
+          <FadeIn delay={250} transitionDuration={1000}>
+            <Link href={`/informacion`} passHref>
               <span className={styles.Link}>
                 <div className={styles.LinkContent}>Start Now</div>
               </span>
-            </FadeIn>
-          </Link>
+            </Link>
+          </FadeIn>
         </div>
       </div>
       <div></div>

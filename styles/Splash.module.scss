@@ -13,10 +13,11 @@
   -webkit-box-align: center;
   align-items: center;
   background-color: #f4f4f4;
-  background-image: url("../public/intro_splash.jpg");
-  background-position: center;
-  background-size: cover;
   color: #fff;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("../public/intro_splash.jpg");
 }
 
 .splashContentWrapper {

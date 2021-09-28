@@ -105,6 +105,10 @@
   line-height: 26px;
 }
 
+.Link:hover {
+  cursor: pointer;
+}
+
 .LinkContent {
   -webkit-text-size-adjust: 100%;
   font-family: Montserrat, sans-serif;

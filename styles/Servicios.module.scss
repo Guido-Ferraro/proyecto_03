@@ -11,12 +11,12 @@
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  background-size: cover;
-  height: 620px;
   background-color: #000;
   color: #fff;
+  height: 620px;
+  background-size: cover;
   background-position: center;
-  //background-image: url("../public/intro_servicios.jpg");
+  background-repeat: no-repeat;
 }
 
 .servicios {
